@@ -14,15 +14,22 @@ body, html{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
+    /*
+    fixed = parallax
+    scroll = normal
+    */
+
     background-attachment: fixed;
 }
+
 .pimg1{
     background-image: url(/img/excercise5.jpg);
     min-height: 100%;
 }
 
 .pimg2{
-    background-image: url(/img/exercise4.jpg);
+    background-image: url(/img/exercise7.jpg);
     background-repeat: no-repeat;
     min-height: 400px;
 }
@@ -40,4 +47,23 @@ body, html{
 .pimg5{
     background-image: url(/img/excercise5.jpg);
     min-height: 400px;
+}
+
+section{
+    text-align: center;
+    padding:  50px 80px;
+}
+
+    /* 
+        below: not really needed since it's default
+    */
+
+.section-light{
+    background-color: whitesmoke;
+    color: #666;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
 }
