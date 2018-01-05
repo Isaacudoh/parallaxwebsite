@@ -10,7 +10,7 @@ body, html{
 
 .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
     position: relative;
-    opacity: 0.70;
+    opacity: 0.80;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,27 +31,29 @@ body, html{
 .pimg2{
     background-image: url(/img/exercise7.jpg);
     background-repeat: no-repeat;
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .pimg3{
     background-image: url(/img/exercise1.jpg);
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .pimg4{
     background-image: url(/img/exercise2.jpeg);
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .pimg5{
     background-image: url(/img/excercise5.jpg);
-    min-height: 400px;
+    min-height: 600px;
 }
 
 section{
     text-align: center;
-    padding:  50px 80px;
+    padding:  80px 80px;
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 
     /* 
@@ -65,5 +67,32 @@ section{
 
 .section-dark{
     background-color: #282e34;
-    color: #ddd;
+    color: #666666;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: brown;
+    color: #ffffff;
+    padding: 20px;
+}
+/* 
+    FOR MOBILE DEVICES. 
+    DISABLE WITH SCREEN WIDTH < 568PX
+*/
+
+@media(max-width:568px){
+    .pimg1 .pimg2 .pimg3 .pimg4 .pimg5{
+        background-attachment: scroll;
+    }
 }
